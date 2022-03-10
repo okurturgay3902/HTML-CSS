@@ -1,0 +1,49 @@
+* {
+  color: blue;
+}
+
+h1 {
+  font: size 3rem;
+  text-align: center;
+  color: rgb(247, 0, 0);
+}
+
+/* notlar boyle yaziliyor*/
+p {
+  font: size 15px;
+  text-align: left;
+  color: rgb(202, 240, 33);
+  background-color: rgb(87, 84, 84);
+}
+
+.aaa {
+  font-size: 1.5rem;
+  background-color: gold;
+  color: rgb(241, 13, 13);
+}
+
+.bbb {
+  font-weight: bold;
+}
+div.aktif {
+  font-size: 2rem;
+  background-color:rgba(0, 0, 0, 0.883);
+  color: white;
+  text-align: center;
+  line-height: 2rem;
+  width: 175px;
+      height: 50px;   
+   
+}
+div {
+  font-size: 2rem;
+  text-align: center;
+  color: black;
+  background-color: gray;
+  line-height: 2rem;
+  width: 175px;
+  height:140px;
+    
+}
+
+

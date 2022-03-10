@@ -1,0 +1,17 @@
+body {
+  background: url("../pexels-johannes-plenio-1103970.jpg") center/cover
+    no-repeat;
+  font-family: "Sansita Swashed", cursive;
+  margin: 20px;
+}
+div {
+  background: url("../pexels-pixabay-235985.jpg ") center/cover no-repeat;
+  font-weight: bold;
+  text-align: center;
+}
+.container {
+  margin-top: 100px;
+}
+.icerik {
+  padding: 20px 50px 50px 50px;
+}

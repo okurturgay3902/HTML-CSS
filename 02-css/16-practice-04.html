@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menü</title>
+​
+​
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+​
+    <link rel="stylesheet" href="assets/css/16-practise-04.css" />
+
+    <style>
+      nav.menu{
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    background-color: rgb(214, 214, 214);
+    width:300px;
+}
+
+ul.menu{
+    list-style-type: '🔹';
+    padding: 0;
+    list-style-position: inside;
+
+}
+
+.active{
+    background-color: gray;
+   
+}
+
+li.item{
+    padding: 1rem;
+}
+
+a.link{
+    text-decoration: none;
+    font-weight: 400;
+    color:black;
+}
+
+a.link:visited{
+    color:black;
+}
+
+a.link:hover{
+    background-color: coral;
+    color:antiquewhite;
+}
+    </style>
+  </head>
+  <body>
+    <nav class="menu">
+      <ul class="menu">
+        <li class="item active"><a href="#" class="link">Ana Sayfa</a></li>
+        <li class="item ">
+            <a href="#" class="link">Ürünler</a>
+        </li>
+        <li class="item"><a href="#" class="link">Blog</a></li>
+        <li class="item"><a href="#" class="link">İletişim</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

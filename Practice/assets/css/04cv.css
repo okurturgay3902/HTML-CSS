@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(185, 209, 224);
+  }
+  h1 {
+    text-align: center;
+    color: white;
+    background-color: rgb(73, 200, 223);
+  }
+  h3{
+    text-align: left;
+    color: white;
+    background-color: rgb(73, 200, 223); 
+    width: 300px;
+  }
+  th {
+    background-color: rgb(88, 195, 209);
+    font: italic;
+  }
+  table {
+    background-color: rgb(156, 223, 223);
+  }

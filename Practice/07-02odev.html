@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>FORM</h1>
+    <p>
+      <em>
+        <b>About us:</b>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+        reiciendis rem eum ipsa odit sed. Ducimus alias ab veritatis fugiat quas
+        aut deleniti. Quisquam quibusdam tempora perferendis sit nesciunt
+        sapiente.
+        <br />
+        <br />
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio libero
+        dolore voluptatum in enim eius quae non dicta aperiam, impedit ratione
+        numquam magnam illum, quaerat quam earum tempore nemo aliquam? Maiores
+        perferendis corporis laboriosam, molestiae ea cumque similique provident
+        velit nisi mollitia sapiente, eligendi iusto tenetur obcaecati alias
+        dolorum ex sunt aliquam autem? Iusto ducimus et accusantium quod vel.
+        Facilis! Commodi in aspernatur modi quam ducimus voluptatibus eius
+        facere ex blanditiis qui. Fugiat, obcaecati eligendi! Quas sequi totam
+        temporibus cum, facere voluptatem enim id placeat ipsam molestias ut,
+        officiis adipisci.
+      </em>
+    </p>
+    <form action="register.js" method="post" required>
+      <label for="mail">Email</label>
+      <input type="text" id="mail" name="email" />
+      <br />
+      <br />
+      <label for="sifre">Sifre</label>
+      <input type="password" id="sifre" required minlength="6" />
+      <br />
+      <br />
+      <input type="radio" name="cinsiyet" id="cinsiyetE" /><label
+        for="cinsiyetE"
+        >Erkek</label
+      >
+      <br />
+      <input type="radio" name="cinsiyet" id="cinsiyetK" /><label
+        for="cinsiyetK"
+        >Kadın</label
+      >
+      <br />
+      <br />
+      <label for="dosya">dosya seç</label
+      ><input type="file" name="dosya" id="dosya" />
+      <br />
+      <br />
+
+      <label for="adres">Adres</label>
+      <textarea id="adres" cols="30" rows="3"></textarea>
+      <br />
+      <br>
+      <label for="sehir">Sehir</label>
+      <select name="sehir" id="sehir" size="" >
+        <option>Seçiniz</option>
+        <option value="1">Adana</option>
+        <option value="2">Adıyaman</option>
+        <option value="3">Afyon</option>
+      </select>
+      <br />
+      <br>
+      <label for="profilRengi">Favori renginiz</label>
+      <input type="color" name="profilRengi" id="profilRengi" />
+      <br />
+      <br>
+      <label >Cay mi kahve mi?</label>
+      <br>
+      <input type="radio" name="ikram" id="ikramT" /><label
+        for="ikramT"
+        >cay</label
+      >
+      <br />
+      <input type="radio" name="ikram" id="ikramK" /><label
+        for="ikramK"
+        >kahve</label
+      >
+      <br />
+      <br>
+      <input type="submit" value="GÖNDER" />
+    </form>
+    
+  </body>
+</html>
