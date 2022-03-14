@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yatay Menu</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --color1: rgb(118, 124, 105);
+        --color2: rgb(34, 32, 32);
+      }
+      nav.menu {
+        background: url(../Practice/assets/pexels-pixabay-235985.jpg);
+        text-align: center;
+      }
+      nav.menu > ul > li {
+        display: inline-block;
+        margin: 1rem;
+        background-color: rgb(134, 134, 60);
+        position: relative;
+      }
+      nav.menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      nav.menu ul ul {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 35px;
+        background-color: rgb(144, 170, 82);
+        text-align: left;
+      }
+      nav.menu ul ul a:hover {
+        background-color: rgb(185, 175, 82);
+        display: block;
+      }
+      nav.menu a {
+        padding: 0.5rem 1rem;
+        display: inline-block;
+        text-decoration: none;
+        color: var(--color2);
+      }
+      nav.menu > ul > li:hover {
+        background-color: rgb(143, 121, 25);
+      }
+      nav.menu > ul > li:hover ul {
+        display: inline-block;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="menu">
+      <ul>
+        <li><a href="#">Ana Sayfa</a></li>
+        <li>
+          <a href="#">Urunler</a>
+          <ul>
+            <li><a href="#">Metal</a></li>
+            <li><a href="#">Cam</a></li>
+            <li><a href="#">Tahta</a></li>
+            <li><a href="#">Plastik</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">İletişim</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

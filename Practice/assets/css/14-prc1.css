@@ -1,0 +1,59 @@
+body{
+    background: url("../pexels-pixabay-235985.jpg");    
+}
+h1{
+    border: none;
+    text-align: center;
+}
+div.container{
+    padding: 50px;
+  margin-top: 100px;
+  border: 3px solid black;
+  border-radius: 15px;
+  background-color: darkgray;
+
+}
+div.container div{
+    border: 1px solid red;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+.kutu1:hover {
+    background: url("../animals/kaplumbaga.jpg") center/cover no-repeat;
+}
+.kutu2:hover{
+    background: url("../animals/ördek.jpg") center/cover no-repeat;
+}
+.kutu3:hover{
+    background: url("../animals/tavƒan.jpg") center/cover no-repeat;
+}
+.kutu4:hover{
+    background: url("../animals/kedi.jpg") center/cover no-repeat;
+}
+.kutu5:hover{
+    background: url("../animals/köpek.jpg") center/cover no-repeat;
+}
+.kutu6:hover{
+    background: url("../animals/aslan.jpg") center/cover no-repeat;
+}
+.kutu7:hover{
+    background: url("../animals/yìlan.jpg") center/cover no-repeat;
+}
+.kutu8:hover{
+    background: url("../animals/deve.jpg") center/cover no-repeat;
+}
+.kutu9:hover{
+    background: url("../animals/fil.jpg") center/cover no-repeat;
+}
+.kutu10:hover{
+    background: url("../animals/at.jpg") center/cover no-repeat;
+}
+.kutu11:hover{
+    background: url("../animals/tavuk.jpg") center/cover no-repeat;
+}
+.kutu12:hover{
+    background: url("../animals/güvercin.jpg") center/cover no-repeat;
+}

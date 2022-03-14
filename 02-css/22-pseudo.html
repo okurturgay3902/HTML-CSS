@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo</title>
+
+    <style>
+      .menu li {
+        display: inline-block;
+      }
+      .menu a {
+        padding-right: 3rem;
+      }
+      .menu li:first-child {
+        background-color: blueviolet;
+      }
+      .menu li:last-child {
+        background-color: rgb(49, 219, 19);
+      }
+      .menu li:last-child a {
+        color: red;
+      }
+      .menu li:nth-child(3) {
+        background-color: rgb(217, 236, 42);
+      }
+      .tablo {
+        background-color: rgb(250, 223, 189);
+        width: 100%;
+      }
+      .tablo tr:nth-child(odd) {
+        background-color: blueviolet;
+      }
+      .menu li::after {
+        content: "*";
+        color: green;
+        font-size: 2rem;
+      }
+      .test {
+        background-color: red;
+      }
+      .test::before {
+        content: "XXX";
+        display: block;
+      }
+      p.cv::first-letter {
+        font-size: 30px;
+      }
+      p.cv::first-line {
+        background-color: yellow;
+      }
+      ul.liste li::marker{
+        color: red;
+      }
+      .menu + td {
+        color: green;
+      }
+  
+    </style>
+  </head>
+  <body>
+    <span class="test">TEST</span>
+
+    <ul class="menu">
+      <li><a href="">Link1</a></li>
+      <li><a href="">Link2</a></li>
+      <li><a href="">Link3</a></li>
+      <li><a href="">Link4</a></li>
+      <li><a href="">Link5</a></li>
+    </ul>
+
+    <table class="tablo">
+      <tbody>
+        <tr>
+          <td>.</td>
+          <td>.</td>
+          <td>.</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>.</td>
+          <td>.</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>.</td>
+          <td>.</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>.</td>
+          <td>.</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>.</td>
+          <td>.</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>.</td>
+          <td>.</td>
+        </tr>
+        <tr>
+          <td>.</td>
+          <td>.</td>
+          <td>.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="cv">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolore
+      enim inventore, et blanditiis magnam quaerat reprehenderit impedit nemo
+      aperiam, cum ex voluptatem officia eaque ab repellendus! Enim, modi
+      officia! Dicta voluptatum incidunt quas reprehenderit perspiciatis dolores
+      non sapiente alias a nemo aperiam, laudantium minus obcaecati laboriosam
+      quis soluta exercitationem esse eligendi! Temporibus necessitatibus nobis
+      maxime accusantium nemo enim dolore! Minima quos facere dignissimos, saepe
+      exercitationem mollitia officia beatae aspernatur nostrum molestiae, ea
+      laboriosam nisi tempore soluta quasi natus, alias asperiores. Sequi
+      laudantium corporis error rem explicabo, doloribus quaerat itaque. Laborum
+      dolor distinctio eius deleniti placeat perspiciatis, voluptatum
+      repudiandae magnam repellat fugit quibusdam ipsum ad sit facilis in
+      consequatur obcaecati ullam excepturi quos eligendi quaerat. Repellendus,
+      rem? Expedita, quaerat fuga. Eaque dolores sunt magni exercitationem
+      labore quidem accusamus laboriosam iure repellendus voluptatem aliquam
+      explicabo hic, error itaque? Est maiores molestias consequatur esse
+      consectetur quae fugiat impedit libero? Quaerat, facilis quibusdam!
+    </p>
+    <ul class="liste">
+      <li>Test 1</li>
+      <li>Test 2</li>
+      <li>Test 3</li>
+    </ul>
+  </body>
+</html>

@@ -9,59 +9,62 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="../assets/css/okul.css" />
   </head>
-  <body>
-    <h1>ÖĞRETMEN KAYIT FORMU</h1>
-    <form>
-      <p>
-        <label for="ad">İsim</label>
-        <input
-          type="text"
-          id="ad"
-          placeholder="Lütfen adınızı giriniz"
-          required
-        />
-      </p>
-      <p>
-        <label for="soyad">Soyad</label>
-        <input
-          type="text"
-          id="soyad"
-          placeholder="Lütfen soyadınızı giriniz."
-          required
-        />
-      </p>
-      <p><label for="tel">Tel</label> <input type="tel" id="tel" /></p>
-      <p>
-        <label for="adres">Adres</label>
-        <textarea id="adres" cols="30" rows="10"></textarea>
-      </p>
-      <p>
-        <label for="mail">Email</label>
-        <input type="email" id="mail" />
-      </p>
-      <p>
-        <label for="ogradi">Ogrenciniz</label>
-        <input
-          type="text"
-          id="ad"
-          placeholder="Lütfen ogrencinizin adınızı giriniz"
-          required
-        />
-      </p>
-      <p>
-        <label for="mslk">Meslek</label>
-        <select name="Meslek" id="mslk">
-          <option>Seciniz</option>
-          <option value="ogr">Ogretmen</option>
-          <option value="mhnd">Muhendis</option>
-          <option value="esnf">Esnaf</option>
-          <option value="srbst">Serbest</option>
-          <option value="memur">Memur</option>
-        </select>
-      </p>
-      <p><input type="submit" value="kaydet" /> <input type="reset" /></p>
-      <a href="main.html"><i class="fa-solid fa-arrow-left"></i>&nbsp Geri</a>
-    </form>
+  <body class="parent">
+    <section class="parent">
+      <h1>ÖĞRETMEN KAYIT FORMU</h1>
+      <form>
+        <p>
+          <label for="ad">İsim</label>
+          <input
+            type="text"
+            id="ad"
+            placeholder="Lütfen adınızı giriniz"
+            required
+          />
+        </p>
+        <p>
+          <label for="soyad">Soyad</label>
+          <input
+            type="text"
+            id="soyad"
+            placeholder="Lütfen soyadınızı giriniz."
+            required
+          />
+        </p>
+        <p><label for="tel">Tel</label> <input type="tel" id="tel" /></p>
+        <p>
+          <label for="adres">Adres</label>
+          <textarea id="adres" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+          <label for="mail">Email</label>
+          <input type="email" id="mail" />
+        </p>
+        <p>
+          <label for="ogradi">Ogrenciniz</label>
+          <input
+            type="text"
+            id="ad"
+            placeholder="Lütfen ogrencinizin adınızı giriniz"
+            required
+          />
+        </p>
+        <p>
+          <label for="mslk">Meslek</label>
+          <select name="Meslek" id="mslk">
+            <option>Seciniz</option>
+            <option value="ogr">Ogretmen</option>
+            <option value="mhnd">Muhendis</option>
+            <option value="esnf">Esnaf</option>
+            <option value="srbst">Serbest</option>
+            <option value="memur">Memur</option>
+          </select>
+        </p>
+        <p><input type="submit" value="kaydet" /> <input type="reset" /></p>
+        <a href="main.html"><i class="fa-solid fa-arrow-left"></i>&nbsp Geri</a>
+      </form>
+    </section>
   </body>
 </html>

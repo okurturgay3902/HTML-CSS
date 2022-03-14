@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yatay Menu</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+    nav.menu{
+      background-color:rgb(218, 167, 29);
+    }
+     nav.menu ul{
+       padding: 0;
+       list-style: none;
+       text-align: center;
+     }
+     nav.menu li{
+       display: inline-block;
+     }
+     nav.menu li::after{
+       content:"|";
+     }
+    nav.menu li:last-child::after{
+      content: "";
+    }
+    nav.menu ul::before{
+      content: "⏮️";
+    }
+    nav.menu ul::after{
+      content: "⏩";
+    }
+
+    </style>
+  </head>
+  <body>
+    <nav class="menu">
+      <ul >
+        <li><a href="#" class="active">Ana Sayfa</a></li>
+        <li><a href="#">Ürünler</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">İletişim</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
