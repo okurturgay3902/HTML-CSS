@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex-2</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <style>
+      body {
+        background-color: rgb(60, 203, 247);
+      }
+      header {
+        background-color: rgb(159, 213, 230);
+      }
+      header ul {
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+      }
+      header ul a {
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+      }
+      header ul li:first-child::before {
+        font: var(--fa-font-solid);
+        content: "\f015";
+      }
+      h1 {
+        text-align: center;
+        color: crimson;
+      }
+      .container {
+        display: flex;
+      }
+      .container .icerik {
+        margin-right: 100px;
+      }
+      footer {
+        background-color: rgb(92, 184, 201);
+        display: flex;
+        justify-content: space-between;
+      }
+      footer .iletisim {
+        margin-top: 20px;
+      }
+      footer .iletisim a {
+        padding: 7px;
+        color: black;
+        text-decoration: none;
+      }
+      footer p {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <header>
+        <ul>
+          <li><a href="#">Anasayfa</a></li>
+          <li><a href="#">Hakkimizda</a></li>
+          <li><a href="#">Randevu</a></li>
+        </ul>
+      </header>
+      <h1>Sayfamiza Hosgeldiniz</h1>
+      <div class="container">
+        <img src="assets/office.jpg" alt="" width="50%" />
+
+        <ol class="icerik">
+          <li>icerik</li>
+          <li>icerik</li>
+          <li>icerik</li>
+          <li>icerik</li>
+          <li>icerik</li>
+          <li>icerik</li>
+          <li>icerik</li>
+        </ol>
+
+        <p>
+          <em
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+            sapiente deserunt nam tempore eveniet nulla fuga architecto quam
+            unde ad omnis quidem sunt dolore, debitis veniam a ex natus .</em
+          >
+        </p>
+      </div>
+      <footer>
+        <h5>BIZE ULASIN</h5>
+        <p>&copy; 2022 Powered by turgay</p>
+        <div class="iletisim">
+          <a href="mailto:techproeducation.com"
+            ><i class="fa-solid fa-at"></i>Eposta</a
+          >
+          <a href="tel:+41789227858"><i class="fa-solid fa-phone"></i>Ara</a>
+          <a href="https://wa.me/905555555555"
+            ><i class="fa-brands fa-whatsapp-square"></i>Whatsapp</a
+          >
+          <a href="https://twitter.com/i/flow/login"
+            ><i class="fa-brands fa-twitter"></i>twitter</a
+          >
+          <a href="https://www.facebook.com/"
+            ><i class="fa-brands fa-facebook"></i>facebook</a
+          >
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
