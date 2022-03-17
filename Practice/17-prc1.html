@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: aquamarine;
+      }
+      h1,
+      h2 {
+        text-align: center;
+      }
+      .container {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .container div:nth-child(odd) {
+        background-color: lightgray;
+      }
+      .icerik {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        gap: 1rem;
+        justify-content: space-around;
+      }
+      .icerik li {
+        padding: 10px;
+        list-style-type: none;
+      }
+      .icerik p::first-letter {
+        text-transform: uppercase;
+        font-size: larger;
+        font-weight: bolder;
+        background-color: orange;
+      }
+      .icerik li::first-letter {
+        text-transform: uppercase;
+        font-size: larger;
+        font-weight: bolder;
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HAKKIMIZDA</h1>
+    <div class="container">
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nisi
+        excepturi porro ipsam quidem adipisci, voluptatem corporis quaerat
+        aperiam suscipit itaque error voluptas magni. Reiciendis sit maxime
+        animi veritatis doloremque.
+      </div>
+      <div>
+        Possimus, atque error pariatur voluptate saepe accusamus accusantium
+        enim, ipsum harum sed aliquid itaque. Impedit a, ratione sapiente, nam
+        libero omnis dolorum nemo aspernatur explicabo velit, officia non
+        pariatur quia.
+      </div>
+      <div>
+        Error tempora est, ipsum facere corporis ex harum eos repellendus ad,
+        nemo enim eius? Cum earum quod perspiciatis tempora eum sit odio minus
+        tempore odit! Ut similique accusantium aliquid quasi!
+      </div>
+      <div>
+        Veniam reiciendis voluptate nobis sed adipisci, fugiat veritatis dolore
+        doloremque consequuntur et nulla aliquam sint commodi maiores quod
+        neque, earum laudantium dignissimos magnam quaerat ipsum qui. Adipisci
+        illo repudiandae minus!
+      </div>
+    </div>
+    <h2>STANDARTLARIMIZ</h2>
+    <div class="icerik">
+      <img src="assets/market.jpg" alt="" width="300" />
+      <p>
+        <span
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque earum
+          dolorem, laboriosam, molestias itaque veniam quam accusamus, officia
+          omnis adipisci alias iure aut rem sed asperiores a ad! Accusamus,
+          dolorum!</span
+        ><span
+          >Dolorem dolores ex exercitationem sed fugit soluta, explicabo unde
+          ratione porro eaque quod et itaque illo, eum quasi laborum earum!
+          Placeat, consequuntur illo. At nisi ad sunt possimus autem sed?</span
+        ><span
+          >Earum consequatur distinctio, magni odit tenetur molestiae dolore
+          cupiditate quis esse laboriosam ipsam? Consectetur quia exercitationem
+          quae sed obcaecati, repellat aperiam adipisci sint animi, sapiente
+          aliquam atque quas asperiores veniam?</span
+        >
+      </p>
+      <ul>
+        <li>icerik olmali burada</li>
+        <li>icerik olmali burada</li>
+        <li>icerik olmali burada</li>
+        <li>icerik olmali burada</li>
+        <li>icerik olmali burada</li>
+        <li>icerik olmali burada</li>
+      </ul>
+    </div>
+  </body>
+</html>

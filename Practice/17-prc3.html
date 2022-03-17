@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <style>
+      section {
+        background-color: bisque;
+      }
+      ul {
+        list-style-type: none;
+      }
+      header {
+        position: sticky;
+        top: 0px;
+        z-index: 20;
+      }
+      header ul {
+        display: flex;
+        height: 10vh;
+        background-color: rgb(185, 147, 100);
+        justify-content: space-evenly;
+        align-items: center;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        color: gray;
+      }
+      h1 {
+        height: 5vh;
+        text-align: center;
+        background-color: rgb(201, 169, 130);
+      }
+      .konu {
+        background-color: rgb(228, 175, 110);
+      }
+      .container {
+        display: flex;
+        gap: 50px;
+      }
+      /*.container ul {
+  list-style-type: "⭐";
+}*/
+      .container li::before {
+        content: "⭐";
+      }
+      .resim {
+        height: 100vh;
+        background: url("assets/clockoffice.jpg") center/cover no-repeat;
+        position: relative;
+      }
+      .resim p {
+        position: absolute;
+        top: 25px;
+        color: rgb(238, 11, 11);
+        opacity: 0.85;
+        left: 150px;
+      }
+      .icon {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        font-size: 50px;
+        color: rgb(100, 223, 100);
+      }
+      .icon:hover {
+        color: rgb(19, 216, 19);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="genel">
+      <header>
+        <ul>
+          <li>icerik</li>
+          <li>icerik</li>
+          <li>icerik</li>
+          <li>icerik</li>
+          <li>icerik</li>
+        </ul>
+      </header>
+      <h1>BASLIK</h1>
+      <div class="konu">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
+          magnam iure voluptas quidem labore nulla sed quam animi totam, cumque,
+          nemo dicta cupiditate. Omnis, dignissimos et eius veniam placeat
+          animi.
+        </p>
+        <p>
+          Repellendus unde debitis nihil dolorum iste nobis laudantium doloribus
+          omnis, repellat eos maiores aliquam sint porro reprehenderit labore
+          animi eaque. Architecto molestiae libero magnam consequatur saepe
+          quisquam, obcaecati nemo sunt!
+        </p>
+        <p>
+          Fuga, natus? Eum, quia suscipit labore, sequi enim nihil officiis
+          perferendis ipsum veritatis reiciendis soluta sit quam quas explicabo
+          quo maxime non nam illum laborum ipsa voluptatum necessitatibus ut
+          deserunt.
+        </p>
+        <p>
+          Obcaecati sunt eligendi ex magni autem! Doloribus porro ab quos eum
+          voluptate suscipit non saepe, illum magnam quidem sapiente incidunt
+          libero, quisquam, numquam possimus! Voluptatum provident in temporibus
+          accusamus laborum?
+        </p>
+      </div>
+      <div class="container">
+        <ul>
+          <li>icerik</li>
+          <li>icerik</li>
+          <li>icerik</li>
+        </ul>
+        <p>
+          <em
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            officia cupiditate asperiores sint laudantium, culpa accusamus
+            voluptatibus nulla dolorem necessitatibus minus? Accusantium a
+            voluptates natus, quisquam delectus accusamus minus temporibus.</em
+          >
+        </p>
+      </div>
+      <div class="resim">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+          ut consequatur repellat saepe! Inventore, suscipit a veniam,
+          voluptatem beatae doloribus quia dolores illum aut iusto quas tempore
+          earum veritatis eius!
+        </p>
+      </div>
+      <div class="icon"><i class="fa-brands fa-whatsapp-square"></i></div>
+    </section>
+  </body>
+</html>
