@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --color1: #474f52;
+        --color2: #f9801d;
+      }
+
+      .input-group {
+        display: inline-block;
+        border: 1px solid var(--color1);
+        border-radius: 3rem;
+        padding: 1px;
+        white-space: nowrap;
+        position: relative;
+      }
+
+      .input-group [type="text"] {
+        border: none;
+        padding: 0.5rem 5rem 0.5rem 1rem;
+        outline: none;
+        border-radius: 3rem;
+      }
+
+      .input-group [type="button"] {
+        position: absolute;
+        right: 1px;
+        border: none;
+        background-color: var(--color1);
+        border-radius: 3rem;
+        padding: 0.5rem 1rem;
+        color: #ececec;
+      }
+
+      .input-group:focus-within {
+        border: 1px solid var(--color2);
+      }
+
+      .input-group:focus-within [type="button"] {
+        background-color: var(--color2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="input-group">
+      <input type="text" />
+      <input type="button" value="Send" />
+    </div>
+  </body>
+</html>
