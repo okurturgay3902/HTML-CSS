@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        const sayi1="145";
+        const sayi2=50;
+        console.log(typeof(sayi1));
+
+        const toplam1=sayi1 +sayi2;
+        console.log(typeof(toplam1));
+        const toplam2=Number(sayi1)+ sayi2;
+        console.log(toplam2);
+
+        console.log(Number("abc55")); //NaN
+        console.log(String(sayi2)+15); //5015
+
+        console.log(Boolean(Number("abc55"))); //false
+        console.log(Boolean(sayi1)); //true
+        console.log(Boolean("")); //false
+        console.log(Boolean(0)); //false
+        console.log(Boolean(null)); //false
+        console.log(Boolean(NaN)); //false
+        console.log(Boolean(NaN), Boolean(sayi1)); //false true
+        console.log(8/2*(2+2));
+
+
+        const s1=2000;
+        const s2=3000;
+
+        console.log("Sonuc :"+ s1-s2); // NaN
+        console.log("Sonuc :"+ (s1-s2)); //-1000
+
+    </script>
+</body>
+</html>
