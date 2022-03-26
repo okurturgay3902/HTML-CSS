@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let x=50;
+        let y=40;
+        let z=10;
+
+        console.log(x==50); // true
+        console.log(x=="50"); // true
+        console.log(x===50); // true
+        console.log(x==="50"); //false === 'de typda kontrol ediyor
+        console.log(x===50n); // false === 'de typda kontrol ediyor
+
+        console.log(x>y); // true  > < >= <= de type kontrolu yapilmaz
+        console.log(x>"40"); // true
+
+        console.log("kedi" && "kopek" && "kus"); //kus
+        console.log("kedi" || "kopek" || "kus"); //kedi
+        console.log("" && "kopek" && "kus"); // bosluk verdi
+        console.log("" || 0 || null || undefined); // undefined
+
+        console.log(70==70 || 60>50 && 40<30); //true
+        console.log((70==70 || 60>50) && 40<30); //false
+
+        console.log(document) // consola documani yazdirir
+    </script>
+</body>
+</html>
