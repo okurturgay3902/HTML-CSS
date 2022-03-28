@@ -17,6 +17,10 @@
            <p class="kutu">TEST</p></div>
     </div>
 
+
+    <h1 class="name">ALI GEL</h1>
+    <p class="mesaj">...</p>
+
     <script>
         let cont= document.querySelector(".container");
         console.log(cont);
@@ -34,6 +38,10 @@
         console.log(cont.innerText);
         cont.innerText = "<b>Merhaba Dünya</b>";
         cont.innerHTML = "<em>Merhaba Dünya</em>";
+
+        let isim=document.querySelector(".name").innerText;
+        console.log(isim);
+        document.querySelector(".mesaj").innerHTML=`Merhaba <b>${isim}</b>`;
 
     </script>
 </body>

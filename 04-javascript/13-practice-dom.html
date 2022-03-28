@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topla</title>
+</head>
+<body>
+    <input type="number" id="txtSayi1">
+    <input type="number" id="txtSayi2">
+    <button id="btnTopla" onclick="topla()">Topla</button>
+    <button id="btnCarp" onclick="carp()">Carpim</button>
+
+    <div id="lblSonuc"></div>
+
+
+    <script>
+        function topla(){
+         let sayi1= document.querySelector("#txtSayi1").value;
+         let sayi2= document.querySelector("#txtSayi2").value;
+
+         let sonuc = Number(sayi1)+ Number(sayi2);
+
+         document.querySelector("#lblSonuc").innerHTML = `Sonuc = <b>${sonuc}</b>`;
+
+
+        }
+        function carp(){
+         let sayi1= document.querySelector("#txtSayi1").value;
+         let sayi2= document.querySelector("#txtSayi2").value;
+
+         let sonucC = Number(sayi1)* Number(sayi2);
+
+         document.querySelector("#lblSonuc").innerHTML = `Sonuc = <b>${sonucC}</b>`;
+        }
+
+    </script>
+</body>
+</html>
