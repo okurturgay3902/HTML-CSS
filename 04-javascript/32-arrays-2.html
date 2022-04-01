@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="baslik"></select>
+
+
+    <script>
+        const meyveler =["Elma","Armut", "Muz", "Kivi"];
+        console.log(meyveler);
+        meyveler.pop(); //kivi gitti
+        console.log(meyveler);
+        meyveler.push("Ananas"); // sona ananas eklendi
+        console.log(meyveler);
+        meyveler.shift(); // elma gitti
+        console.log(meyveler);
+        meyveler.unshift("Cilek");
+        console.log(meyveler);
+        meyveler.reverse(); // ters sirala
+        console.log(meyveler);
+        meyveler.sort();// a-z siralar
+        console.log(meyveler);
+        meyveler.sort( (a,b) => a.localeCompare(b, 'tr')).reverse; // yerel alfabeye gore siralasin
+        console.log(meyveler);
+
+        meyveler.splice(2,2, "Ayva", "Uzum");// 2. indexten itibaren 2 adet sil(0 verirsek silmez) ayva ekle
+        console.log(meyveler);
+
+
+        document.querySelector("#baslik").innerHTML ="<option>"+meyveler.join("</option><option>")+ "</option>"
+
+
+
+
+
+
+        const sayilar =[5, 14, 2, 167];
+        sayilar.sort(); // siralamadi
+        console.log(sayilar);
+
+        sayilar.sort(function (a,b) {
+            return a-b;
+        })
+        console.log(sayilar);
+    </script>
+</body>
+</html>
