@@ -12,6 +12,7 @@ const notlar = [
 
 
 const liste=document.querySelector("#liste");
+const yeniList=document.querySelector("#metin ul");
 let satir="";
 for (not of notlar) {
   satir+=`<li>${not}</li>`
@@ -20,6 +21,7 @@ for (not of notlar) {
 liste.innerHTML=satir;
 
 let veri=document.querySelector("#yeni");
+
 document.querySelector("#ekle").addEventListener("click",()=>{
   liste.innerHTML +=`<li>${veri.value}</li>`;
   notlar.push(veri.value);
@@ -30,15 +32,19 @@ document.querySelector("#ekle").addEventListener("click",()=>{
 
 document.querySelector("#sil").addEventListener("click",()=>{
   if(notlar.length==0){
-alert("Liste bosaldi.Silecek Eleman kalmadi")
+alert("Liste bosaldi.")
   } else{
 notlar.pop();
 liste.removeChild(liste.lastElementChild);
 sonuc(notlar);
   }
-})
+});
 
 
-const sonuc=(eklenen)=>{
-  document.querySelector("#metin ul").innerHTML=`<li class="list-group-item">${eklenen}</li>`;
-}
+const sonuc=(not)=>{
+  let yeni ="";
+  for(not of notlar){
+    yeni +=`<li>${not}</li>`;
+  }
+  yeniList.innerHTML=yeni;
+};
