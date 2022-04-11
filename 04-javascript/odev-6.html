@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family: digital;
+        src: url("assets/font/digital-7.ttf");
+      }
+
+      .clock {
+        font-family: digital;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        background-color: rgba(50, 50, 50);
+        border-radius: 0.3rem;
+        justify-content: center;
+        font-size: 2rem;
+        color: lime;
+      }
+    </style>
+  </head>
+
+  <body>
+    <ul id="clock" class="clock">
+      <li>22</li>
+      <li>:</li>
+      <li>25</li>
+    </ul>
+
+    <script>
+      const hour = document.querySelector("#clock li:nth-child(1)");
+const second = document.querySelector("#clock li:nth-child(2)");
+const munite = document.querySelector("#clock li:nth-child(3)");
+
+const tick = ()=>{
+
+
+}
+
+setInterval(tick)
+
+
+let sayac=0;
+let dakika =munite.innerText;
+let saat = hour.innerText;
+
+setInterval(() => {
+second.style.color = "white";
+}, 500);
+
+
+setInterval(() => {
+    second.style.color = "lime";
+    sayac++;
+  
+    console.log(sayac);   
+  
+    if (sayac==5){
+        dakika++;
+        munite.innerHTML=`<li>${dakika}</li>`;
+        sayac=0;       
+    }
+
+    if (dakika>30){
+
+        saat++;
+        hour.innerHTML=`<li>${saat}</li>`;
+        dakika=0;
+    }
+
+    if (saat==23){
+
+        saat=0;
+        hour.innerHTML=`<li>${saat}</li>`;
+
+    }
+}, 1000);  
+    </script>
+  </body>
+</html>
