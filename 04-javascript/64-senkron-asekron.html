@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const hesapla=(a,b, cb)=>{
+            setTimeout(()=> {
+            let s= a+b;
+            cb(s);
+        },200)
+
+        };
+
+        //senkron calisma
+        console.log("Merhaba1");
+        console.log("Merhaba2");
+        console.log("Merhaba3");
+
+        //asenkron calisma
+        console.log("Dunya1");
+
+       const sonuc = hesapla(12, 15, (data)=>{
+            console.log(data);
+        });                
+        console.log("Dunya3");
+        
+
+    </script>
+</body>
+</html>
